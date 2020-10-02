@@ -1,6 +1,6 @@
-# Require TF version to be same as or greater than 0.12.13
+# Require TF version to be same as or greater than 0.13.4
 terraform {
-  required_version = ">=0.12.13"
+  required_version = ">=0.13.4"
   backend "s3" {
     bucket         = "s3-glopezgt"
     key            = "terraform.tfstate"
