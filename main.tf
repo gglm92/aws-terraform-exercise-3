@@ -1,13 +1,13 @@
 # Require TF version to be same as or greater than 0.13.4
 terraform {
   required_version = ">=0.13.4"
-  backend "s3" {
-    bucket         = "s3-glopezgt"
-    key            = "terraform.tfstate"
-    region         = "us-east-1"
-    dynamodb_table = "aws-lockss-glopezgt"
-    encrypt        = true
-  }
+  # backend "s3" {
+  #   bucket         = "s3-glopezgt"
+  #   key            = "terraform.tfstate"
+  #   region         = "us-east-1"
+  #   dynamodb_table = "aws-lockss-glopezgt"
+  #   encrypt        = true
+  # }
 }
 
 # Download any stable version in AWS provider of 2.36.0 or higher in 2.36 train
