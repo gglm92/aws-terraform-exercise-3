@@ -20,15 +20,15 @@ provider "aws" {
 # Commented out until after bootstrap
 
 # Call the seed_module to build our ADO seed info
-module "bootstrap" {
-  source                      = "./modules/bootstrap"
-  name_of_s3_bucket           = "s3-glopezgt"
-  dynamo_db_table_name        = "aws-lockss-glopezgt"
-  iam_user_name               = "GitHubActionsIamUser"
-  ado_iam_role_name           = "GitHubActionsIamRole"
-  aws_iam_policy_permits_name = "GitHubActionsIamPolicyPermits"
-  aws_iam_policy_assume_name  = "GitHubActionsIamPolicyAssume"
-}
+# module "bootstrap" {
+#   source                      = "./modules/bootstrap"
+#   name_of_s3_bucket           = "s3-glopezgt"
+#   dynamo_db_table_name        = "aws-lockss-glopezgt"
+#   iam_user_name               = "GitHubActionsIamUser"
+#   ado_iam_role_name           = "GitHubActionsIamRole"
+#   aws_iam_policy_permits_name = "GitHubActionsIamPolicyPermits"
+#   aws_iam_policy_assume_name  = "GitHubActionsIamPolicyAssume"
+# }
 
 # Build the VPC
 resource "aws_vpc" "vpc" {
